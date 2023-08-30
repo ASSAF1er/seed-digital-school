@@ -1,0 +1,73 @@
+
+.upper-bar{
+    
+    padding: 15px 20px;
+   
+}
+.calendar-icon{
+    position: relative;
+    width: 40px;
+    padding: 0 10px;
+    
+}
+.upper-bar{
+    display: flex;
+    flex-direction: row;
+}
+.active-page{
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+    padding: 10px 0px;
+    width: 210px;
+}
+.date{
+    position: relative;
+    width: 150px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+.resarch-btn{
+    margin: 0px 50px 0px 50px;
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    height: 40px;
+    background-color: white;
+    padding: 0 20px;
+    border-radius: 25px;
+    
+   
+}
+.resarch-btn input{
+    width: 1000px;
+    height: 40px;
+    border: none; 
+    font-size: 16px;
+    color: rgb(63, 59, 59);
+}
+.resarch-btn input:focus{
+    outline: none;
+}
+.resarch-btn input:focus .resarch-btn{
+    border: 1px blue solid;
+}
+.resarch-btn .material-icons{
+    width: 15px;
+    height: 20px;
+    padding: 10px 0 10px 5px;
+    cursor: pointer;
+}
+.profile{
+   display: flex;
+    flex-direction: row; 
+}
+.profile-picture img{
+    width: 40px;
+    
+}
+.profile span{
+    padding: 10px;
+}

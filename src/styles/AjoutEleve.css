@@ -1,0 +1,127 @@
+.ajout-eleve{
+    position: absolute;
+    left: 260px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    width: 60%;
+    margin: 10px auto;
+    
+}
+
+
+
+.form-container input{
+    margin: 5px 0px 25px 0;
+    padding: 7px 10px;
+    font-size: 16px;
+    color: #495057;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgb(217, 231, 244) ;
+}
+
+.form-container input:focus{
+    outline: 2px solid #7f91c5;
+}
+
+.form-container label{
+    font-weight: 600;
+}
+
+.form-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #008aeb;
+
+}
+
+.first-line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.first-line label{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+ 
+}
+.first-line input{
+    width: 90%;
+}
+ .btn-back,.btn-next{
+    
+  text-align: center;
+  font-size: 18px;
+  
+  font-weight: 500;
+  
+  
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  
+
+}
+.buttons{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+   
+   width: all;
+    
+}
+.btn-next{
+    position: absolute;
+    background-color:#1c8ddf;
+   padding: 5px 50px;
+    right: 0;  
+    color: white;
+    border: 1px solid #1c8ddf
+}
+
+.btn-back{
+    
+   left: 0;
+    color: #1c8ddf;
+    border: 1px solid #1c8ddf;
+    padding: 5px 20px;
+
+}
+.img-previewer{
+    width: 100%;
+    max-height: 200px;
+    border-radius: 5px;
+    border: solid 1px grey ;
+    padding: 5px 5px;
+    margin: 5px 0 25px 0 ;
+    background-color: rgb(217, 231, 244);
+    font-size: 16px; 
+    border: none;
+}
+.img-previewer input{
+background-color: none;
+width: 80%;
+margin: 5px 5px;
+
+}
+.img-previewer img{
+    width: 100px;
+    margin: 0 10px;
+    border-radius: 50px;
+}
