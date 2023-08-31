@@ -61,23 +61,21 @@
 .first-line input{
     width: 90%;
 }
- .btn-back,.btn-next{
-    
+button{
   text-align: center;
-  font-size: 18px;
   
   font-weight: 500;
-  
-  
   border-radius: 5px;
   cursor: pointer;
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
   margin: 0;
-  
-
 }
+button a{
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+  flex-direction: row;
+}
+
 .buttons{
     position: relative;
     display: flex;
@@ -89,19 +87,26 @@
 .btn-next{
     position: absolute;
     background-color:#1c8ddf;
+    border: 1px solid #1c8ddf ;
+    right: 0;
+    
+}
+.btn-next a{
    padding: 5px 50px;
-    right: 0;  
+     
     color: white;
-    border: 1px solid #1c8ddf
+}
+.btn-back{
+   border: 1px solid #1c8ddf;
+ color:#1c8ddf ;
+ 
+ display: flex;
+  flex-direction: row;
 }
 
-.btn-back{
-    
-   left: 0;
+.btn-back a{
     color: #1c8ddf;
-    border: 1px solid #1c8ddf;
-    padding: 5px 20px;
-
+   padding: 5px 25px;
 }
 .img-previewer{
     width: 100%;
@@ -124,4 +129,9 @@ margin: 5px 5px;
     width: 100px;
     margin: 0 10px;
     border-radius: 50px;
+}
+.star{
+    color: #1c8ddf;
+    display: inline-block;
+    
 }

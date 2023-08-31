@@ -1,9 +1,10 @@
 import UpperBar from "../components/upperBar"
-import '../styles/AjoutEleve.css'
+import '../styles/InfosPerso.css'
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 
-function AjoutEleve(){
+function InfosPerso(){
    const title='Nouvel Élève'
 
    const [file, setFile]=useState()
@@ -20,20 +21,20 @@ function AjoutEleve(){
                         <h2>Informations personnelles</h2>
 
                         <div className="first-line">
-                            <label for="nom-enfant">Nom <br/>
+                            <label for="nom-enfant"> <span>Nom <span className="star">*</span></span>
                             <input type="text" name="nom-enfant"  /></label><br/>
 
-                            <label for="nom-enfant">Prénom <br/>
+                            <label for="nom-enfant"> <span> Prénom <span className="star">*</span></span>
                             <input type="text" name="nom-enfant"  /></label><br/>
                         </div>
 
-                        <label for="nom-enfant">Sexe </label><br/>
+                        <label for="nom-enfant"> <span> Sexe<span className="star">*</span></span> </label><br/>
                         <input type="text" name="nom-enfant"  /><br/>
 
-                        <label for="nom-enfant">Date de Naissance </label><br/>
+                        <label for="nom-enfant"><span>Date de Naissance <span className="star">*</span></span></label><br/>
                         <input type="date" name="nom-enfant"  /><br/>
 
-                        <label>Image de couverture<br />
+                        <label>Photo 4X4<br />
             <div  className={`${'img-previewer'} `}>
                 <input type="file" className='img-input' accept='image/*'   onChange={handleChange}/><br />
                 <img src={file} alt="" className='img-preview'/><br />
@@ -41,12 +42,10 @@ function AjoutEleve(){
                    
                     </form>
                     <section className="buttons">
-                        <button className="btn-back">
-                            <span className="material-icons">arrow_back</span>Précédent
-                            </button>
-                        <button className="btn-next">
+                        
+                        <button className="btn-next"><Link to='/InfosContact'>
                             Suivant <span className="material-icons">navigate_next</span>
-                        </button>
+                        </Link></button>
                     </section>
                      
 
@@ -55,4 +54,4 @@ function AjoutEleve(){
         </div>
     )
 }
-export default AjoutEleve
+export default InfosPerso

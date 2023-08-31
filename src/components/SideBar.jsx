@@ -18,12 +18,12 @@ const SideBar = () => {
                     <span className="material-icons">dashboard</span>
                     Tableau de bord</Link>
                  </li>
-                 <li><Link to='/NouvelEleve' className='active'>
+                 <li><Link to='/InfosPerso' className='active'>
                         <span className="material-icons">person_add</span>
                         Nouvel Élève
                         </Link>
                  </li>
-                <li><Link to='/gestion'>
+                <li><Link to='/gestionEleves'>
                     <span  className="material-icons">school</span>
                     Gestion des Élèves</Link>
                 </li>

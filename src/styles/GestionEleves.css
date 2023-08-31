@@ -1,0 +1,39 @@
+
+.gestion-eleves{
+    position: absolute;
+    left: 260px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.table-container{
+margin: 50px auto;
+}
+thead{
+    padding: 0;
+    background-color:#27a0f7c9 ;
+    border-radius: 10px 10px 0 0;
+}
+th{
+    color: white;
+    
+    margin: 0;
+    padding: 15px 10px;
+}
+td{
+    color: rgb(29, 28, 28);
+    padding: 10px 10px;
+    border-spacing: 0;
+    border: none;
+  
+    margin: 0;
+}
+table{
+    font-size: 16px;
+    border-collapse: collapse;
+    
+}
+tr:nth-of-type(2n){
+    background-color: rgb(228, 240, 251);
+
+}
