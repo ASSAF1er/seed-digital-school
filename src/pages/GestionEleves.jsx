@@ -3,6 +3,7 @@ import '../styles/GestionEleves.css'
 import { useContext } from "react"
 import {StudentList} from '../utils/StudentListContext'
 import ListElement from "../components/ListElement"
+import photo from '../assets/profile.png'
 
 function GestionEleves(){
 
@@ -17,13 +18,23 @@ function GestionEleves(){
                 <table>
                     <thead>
                         <tr>
-                            <th>Nom</th>
-                            <th>Prénom</th>
+                            <th>Actions</th>
+                            <th>Noms</th>
+                            <th>Prénoms</th>
                             <th>sexe</th>
                             <th>Date début</th>
                             <th>Date fin</th>
                             <th>Reste</th>
                             <th>Formation</th>
+                            <th>Montant</th>
+                            <th>Avance</th>
+                            <th>Niveau</th>
+                            <th>Date Naissance</th>
+                            <th>Contact</th>
+                            <th>Quartier</th>
+                            <th>Email</th>
+                            <th>Photo</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
@@ -38,6 +49,14 @@ function GestionEleves(){
                             end={stud.end}
                             rest={stud.rest}
                             training={stud.training}
+                            birthday={stud.birthday}
+                            level={stud.level}
+                            tel1={stud.tel1}
+                            amount={stud.amount}
+                            advance={stud.advance}
+                            quater={stud.quater}
+                            email={stud.email}
+                            photo={stud.photo ? stud.photo: photo}
                         />))
                     }
                     </tbody>

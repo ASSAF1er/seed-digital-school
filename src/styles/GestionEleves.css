@@ -7,12 +7,21 @@
     flex-direction: column;
 }
 .table-container{
-margin: 50px auto;
+margin: 0 auto;
+max-height: 500px;
+max-width: 900px;
+overflow-x: scroll;
+overflow-y: scroll;
+
 }
 thead{
     padding: 0;
-    background-color:#27a0f7c9 ;
-    border-radius: 10px 10px 0 0;
+    background-color:rgb(122, 184, 243) ;
+    
+    box-shadow: 0 0 1px 0 grey;
+    font-size: 16px;
+    
+    
 }
 th{
     color: white;
@@ -22,18 +31,44 @@ th{
 }
 td{
     color: rgb(29, 28, 28);
-    padding: 10px 10px;
+    padding: 5px 10px;
     border-spacing: 0;
     border: none;
-  
+    
     margin: 0;
 }
 table{
-    font-size: 16px;
+    font-size: 15px;
     border-collapse: collapse;
-    
+ 
+}
+tr{
+   border-bottom:1px solid rgb(230, 224, 224) ; 
+   
+}
+tbody tr:nth-of-type(n):hover{
+    background-color: rgb(197, 223, 248);
 }
 tr:nth-of-type(2n){
     background-color: rgb(228, 240, 251);
 
+}
+
+.material-icons{
+    
+    margin: 0;
+    cursor: pointer;
+}
+.delete{
+    color: rgb(240, 100, 100);
+}
+.edit{
+    color: green;
+    padding-left: 10px;
+}
+.apercu-photo{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    object-fit: cover;
 }
