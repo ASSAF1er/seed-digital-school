@@ -44,9 +44,15 @@ body{
     height: 30px;
     width:all;
     font-weight: 700;
+    transition: .5s;
+}
+.side-bar ul a:hover{
+   color: rgb(96, 95, 95);
+    background-color: rgb(197, 223, 248);
+    border-radius: 5px;
 }
 
-.side-bar ul a:hover,.side-bar ul  .active {
+.side-bar ul  .active {
    
    
     color:white;
@@ -54,6 +60,7 @@ body{
     border-radius: 5px;
     
 }
+
 .logo-wrapper{
     padding: 20px;
     border-radius: 20px 0px 0 0px ;

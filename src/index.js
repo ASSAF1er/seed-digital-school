@@ -9,7 +9,7 @@ import InfosFormation from './pages/InfosFormation';
 import InfosContact from './pages/InfosContact';
 import GestionEleves from './pages/GestionEleves';
 import StudentListProvider from './utils/StudentListContext';
-
+import Formations from './pages/Formations';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -23,6 +23,7 @@ root.render(
         <Route path='/InfosFormation' element={<InfosFormation/>}/>
         <Route path='/InfosContact' element={<InfosContact/>}/>
         <Route path='/gestionEleves' element={<GestionEleves/>}/>
+        <Route path='/formations' element={<Formations/>}/>
 
       </Routes>
     <App />
