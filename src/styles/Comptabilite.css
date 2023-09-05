@@ -1,0 +1,118 @@
+.comptabilite{
+    position: absolute;
+    left: 260px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.comptabilite-container{
+    display: flex ;
+    margin: 0 auto;
+    
+
+    padding: 20px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+.solde{
+    text-align: center;
+    border-radius: 10px;
+    width: 400px;
+    margin: 10px 0px;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #5bb2f1;
+    border-bottom: 13px solid rgb(12, 12, 117);
+    position: relative;
+    box-shadow: 0 1px 6px 0 #20212447;
+}
+.solde .montant{
+    font-size: 22px;
+    font-weight: 900;
+    
+}
+.solde .material-icons{
+    color: yellow;
+    right: 70px;
+    font-size: 30px;
+    position: absolute;
+}
+.historique-text{
+    border-bottom:1px solid rgb(12, 12, 117);
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    color:rgb(12, 12, 117) ;
+}
+.historique-text .material-icons{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+.historique-container{
+    max-height: 350px;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
+.transaction{
+    background-color: white;
+    padding: 15px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px 0 #20212447;
+    font-size: 15px;
+    
+}
+.transaction .en-tete{
+    
+    font-weight: bold;
+    width: all;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 5px;
+}
+.transaction .en-tete .montant{
+    position: absolute;
+    right: 0;
+    
+    font-weight: 900;
+}
+.transaction .entree{
+    color: green;
+}
+.transaction .sortie{
+    color: red;
+}
+
+.transaction .auteur{
+    color: rgb(60, 59, 59);
+}
+.transaction .description{
+    margin: 10px 0 0 20px;
+    border-left: 2px solid;
+    padding-left: 10px;
+    color: rgb(31, 30, 30);
+}
+.transaction .description .type{
+    
+    font-weight: bold;
+}
+.add-btn{
+    position: absolute;
+    bottom: 30px;
+    right: 170px;
+    
+    border-radius: 25px;
+    color: rgb(12, 12, 117);
+}
+.add-btn .material-icons{
+    font-size: 50px;
+    
+}
+

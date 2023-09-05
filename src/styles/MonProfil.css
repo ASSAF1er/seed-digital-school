@@ -1,0 +1,7 @@
+.mon-profil{
+    position: absolute;
+    left: 260px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}

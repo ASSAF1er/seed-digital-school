@@ -4,6 +4,7 @@ import { useContext } from "react"
 import {StudentList} from '../utils/StudentListContext'
 import ListElement from "../components/ListElement"
 import photo from '../assets/profile.png'
+import { Link } from "react-router-dom"
 
 function GestionEleves(){
 
@@ -62,7 +63,13 @@ function GestionEleves(){
                     </tbody>
                 </table>
             </div>
-            
+
+            <Link to='/InfosPerso'className="add-student-btn">
+                <div >
+                    <span class="material-icons">add_circle</span>
+                </div>
+            </Link>
+
         </div>
 
     )

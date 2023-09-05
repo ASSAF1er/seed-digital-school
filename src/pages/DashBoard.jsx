@@ -31,7 +31,7 @@ function DashBoard(){
                 <span className='numbers'>05</span> </div>
 
                 <div className="formateurs">
-                <span class="material-icons">history_edu</span>
+                <span className="material-icons">history_edu</span>
                 Formateurs <br />
                 <span className='numbers'>04</span> </div>
 

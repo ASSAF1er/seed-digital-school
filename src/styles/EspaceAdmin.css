@@ -1,0 +1,24 @@
+.espace-admin{
+    position: absolute;
+    left: 260px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.espace-admin h2{
+    text-align: center;
+}
+.add-account-btn{
+    margin: 10px auto;
+    
+    border-radius: 25px;
+    color: rgb(12, 12, 117);
+}
+.add-account-btn .material-icons{
+    font-size: 40px;
+}
+.mail{
+    color: orange;
+    
+    padding-left: 10px;
+}

@@ -11,7 +11,7 @@
     const [min, setMin]=useState(new Date().getMinutes())
     const [sec,setSec]=useState(new Date().getSeconds())
 
-    const weekdays=["Lun","Mar","Mer","Jeu","Ven","Sam","Dim"]
+    const weekdays=["Dim","Lun","Mar","Mer","Jeu","Ven","Sam" ]
     const months=["jan","fev","mars","avril","mai","juin","juillet","août","sept","oct","nov","dec"]
     
     const refresh=()=>{setInterval(()=>{
@@ -35,7 +35,7 @@
             </div>
             <div className="date"> 
             <div><img src={calendar} alt="" className='calendar-icon' /> </div> 
-            {`${weekdays[weekDay-1]},${day} ${months[month-1]}`} {`${hour}:${min}:${sec}`}
+            {`${weekdays[weekDay]}, ${day} ${months[month-1]}`} {`${hour}:${min}:${sec}`}
             </div>
             <div className="profile">
                 <div className="profile-picture"><img src={profile} alt="" /></div>

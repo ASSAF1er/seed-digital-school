@@ -11,34 +11,49 @@
     padding: 20px auto;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 30px;
 
 }
 .grid-container div{ 
     border-radius: 10px;
     width: 200px;
-    margin: 20px 20px;
-    padding: 20px;
+    margin: 10px 20px;
+    padding: 10px;
     max-height: 100px;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(29, 29, 29);
+    
+    background: linear-gradient(160deg, rgb(173, 217, 240) 50%, #008aeb);
+    transition: 1s;
 }
+.grid-container div:hover{
+    transform: rotate(20deg);
+    background: linear-gradient(160deg, rgb(190, 230, 252) 20%, #0089eb);
+
+} 
 
 
-.first{
-    background-color: #3685f3;
-}
+ 
 
-.second{
-    background-color: orange;
+
+.grid-container div .presentation .material-icons{
+    padding: 0;
+    margin: 0;
+    font-size: 100px;
 }
-.third{
-    background-color: yellow;
+.eff-forme{
+    color: green;
+    font-weight: bold;
+    padding:50px 20px 0 0;
 }
-.forth{
-    background-color: purple;
-}
-.fith{
-    background-color: grey;
-}
-.presentation{
-    background-color: green;
+.en-formation{
+    color: purple;
+    font-weight: bold;
+    padding:50px 20px 0 0;
+}.grid-container div .eff-forme .material-icons,.grid-container div .en-formation .material-icons{
+    font-size: 18px;
+    padding:10px 5px 0 0;
+
 }
 

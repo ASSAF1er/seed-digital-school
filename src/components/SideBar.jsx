@@ -39,11 +39,11 @@ const SideBar = () => {
                 <span className="material-icons">payments</span>
                 Comptabilité</Link>
                 </li>
-                <li><Link to='/admin' className={`${location.pathname === '/admin' ? 'active':''}`} >
+                <li><Link to='/espaceAdmin' className={`${location.pathname === '/espaceAdmin' ? 'active':''}`} >
                 <span className="material-icons">admin_panel_settings</span>
                 Espace Administrateur</Link>
                 </li>
-                <li><Link to='/profil' className={`${location.pathname === '/profil' ? 'active':''}`} >
+                <li><Link to='/MonProfil' className={`${location.pathname === '/MonProfil' ? 'active':''}`} >
                 <span className="material-icons">account_circle</span>
                 Mon profil</Link>
                 </li>

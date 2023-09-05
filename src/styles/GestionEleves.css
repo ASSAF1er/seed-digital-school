@@ -72,3 +72,14 @@ tr:nth-of-type(2n){
     border-radius: 15px;
     object-fit: cover;
 }
+
+.add-student-btn{
+    
+    margin: 10px auto;
+    border-radius: 25px;
+    color: rgb(12, 12, 117);
+    
+}
+.add-student-btn .material-icons{
+    font-size: 40px;
+}
