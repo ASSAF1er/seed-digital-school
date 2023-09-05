@@ -22,7 +22,7 @@ const SideBar = () => {
                     <span className="material-icons">dashboard</span>
                     Tableau de bord</Link>
                  </li>
-                 <li><Link to='/InfosPerso' className={`${location.pathname === '/InfosPerso' ? 'active':''}`} >
+                 <li><Link to='/InfosPerso' className={`${location.pathname === '/InfosPerso'|| location.pathname === '/InfosContact'|| location.pathname === '/InfosFormation' ? 'active':''}`} >
                         <span className="material-icons">person_add</span>
                         Nouvel Élève
                         </Link>
@@ -41,7 +41,7 @@ const SideBar = () => {
                 </li>
                 <li><Link to='/espaceAdmin' className={`${location.pathname === '/espaceAdmin' ? 'active':''}`} >
                 <span className="material-icons">admin_panel_settings</span>
-                Espace Administrateur</Link>
+                Espace Super Administrateur</Link>
                 </li>
                 <li><Link to='/MonProfil' className={`${location.pathname === '/MonProfil' ? 'active':''}`} >
                 <span className="material-icons">account_circle</span>

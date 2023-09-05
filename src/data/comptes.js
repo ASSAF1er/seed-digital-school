@@ -1,12 +1,13 @@
 export const accounts=[
     {
         id:"1",
-        name:'Beral ASSONFACK',
+        name:'John Doe',
         password:'123456789',
         status:"admin",
         date:"22/08/2023",
+        email:'johndoe@gmail.com',
         profil:"",
-        email:"assaffart@gmail.com"
+       
     },
     {
         id:"2",

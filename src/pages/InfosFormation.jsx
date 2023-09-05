@@ -14,7 +14,7 @@ function InfosFormation(){
 
             <div className="form-container">
                     <form action="" className="infos-perso">
-                        <h2>Informations de Formation</h2>
+                        <h2>Informations de la Formation</h2>
 
                         
                             <label for="nom-enfant"> <span> Niveau scolaire<span className="star">*</span></span>
