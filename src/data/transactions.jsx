@@ -26,13 +26,5 @@ export const transactions=[
         autor:"Beral ASSONFACK",
         status:"admin",
     },
-    {
-        date:'',
-        time:'',
-        type:'',
-        amount:"",
-        description:"",
-        autor:"",
-        status:"",
-    }
+   
 ]
