@@ -24,9 +24,13 @@ root.render(
     <SideBar/>
       <Routes>
         <Route path='/' element={<DashBoard/>}/>
-        <Route path='/InfosPerso' element={<InfosPerso/>}/>
-        <Route path='/InfosFormation' element={<InfosFormation/>}/>
-        <Route path='/InfosContact' element={<InfosContact/>}/>
+        
+        <Route path='/NouvelEleve' >
+          <Route path='/NouvelEleve/InfosPerso' element={<InfosPerso/>}/>
+          <Route path='/NouvelEleve/InfosFormation' element={<InfosFormation/>}/>
+          <Route path='/NouvelEleve/InfosContact' element={<InfosContact/>}/>
+        </Route>
+
         <Route path='/gestionEleves' element={<GestionEleves/>}/>
         <Route path='/formations' element={<Formations/>}/>
         <Route path='/comptabilite' element={<Comptabilite/>}/>

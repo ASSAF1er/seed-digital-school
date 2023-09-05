@@ -10,7 +10,13 @@ function GestionEleves(){
 
     const title='Gestion Élèves'
 
-    const {students}=useContext(StudentList)
+    const {students,setStudents}=useContext(StudentList)
+    
+
+    const handleDelete=(id)=>{
+        setStudents(students.filter((stud)=>stud.id!==id))
+
+    }
 
     return(
         <div className="gestion-eleves">
@@ -42,7 +48,9 @@ function GestionEleves(){
                     {
                          students.map((stud)=>(
                         <ListElement
-                            key={stud.name}
+                            key={stud.id}
+                            handleDelete={handleDelete}
+                            id={stud.id}
                             name={stud.name}
                             surname={stud.surname}
                             sexe={stud.sexe}

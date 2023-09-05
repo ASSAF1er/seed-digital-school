@@ -43,7 +43,7 @@ function InfosPerso(){
                     </form>
                     <section className="buttons">
                         
-                        <button className="btn-next"><Link to='/InfosContact'>
+                        <button className="btn-next"><Link to='/NouvelEleve/InfosContact'>
                             Suivant <span className="material-icons">navigate_next</span>
                         </Link></button>
                     </section>

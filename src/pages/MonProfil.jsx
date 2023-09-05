@@ -7,7 +7,9 @@ import { accounts } from "../data/comptes"
 function MonProfil(){
     const title="Mon profil"
 
-    const user = accounts.filter((acc)=>acc.id==='1' )
+    const [accountsList,setAccountsList]=useState(accounts)
+
+    const user = accountsList.filter((acc)=>acc.id==='1' )
 
     const [file, setFile]=useState()
     const handleChange= (e)=>{
@@ -19,6 +21,16 @@ function MonProfil(){
     const [userStatus,setUserStatus]=useState(user[0].status)
     const [userDate,setUserDate]=useState(user[0].date)
     const [userEmail,setUserEmail]=useState(user[0].email)
+
+    const saveprofile=(e)=>{
+        e.preventDefault()
+        setAccountsList(accountsList.map((acc)=>acc.id==='1'?
+        ({...acc, 
+            name:userName, 
+            password:userPassword,
+            email:userEmail,
+    }):acc))
+    }
       
    
     return(
@@ -63,7 +75,7 @@ function MonProfil(){
                     </form>
                     <section className="buttons">
                         
-                        <button className="btn-next"><Link >
+                        <button className="btn-next" onClick={saveprofile}><Link >
                             Valider
                         </Link></button>
                     </section>

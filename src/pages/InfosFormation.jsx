@@ -49,7 +49,7 @@ function InfosFormation(){
                    
                     </form>
                     <section className="buttons">
-                        <button className="btn-back"><Link to='/InfosContact'>
+                        <button className="btn-back"><Link to='/NouvelEleve/InfosContact'>
                             <span className="material-icons">arrow_back</span>Précédent
                            </Link> </button>
                         <button className="btn-next"><Link>

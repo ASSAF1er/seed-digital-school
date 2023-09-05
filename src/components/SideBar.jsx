@@ -22,7 +22,7 @@ const SideBar = () => {
                     <span className="material-icons">dashboard</span>
                     Tableau de bord</Link>
                  </li>
-                 <li><Link to='/InfosPerso' className={`${location.pathname === '/InfosPerso'|| location.pathname === '/InfosContact'|| location.pathname === '/InfosFormation' ? 'active':''}`} >
+                 <li><Link to='/NouvelEleve/InfosPerso' className={`${location.pathname === '/NouvelEleve/InfosPerso'|| location.pathname === '/NouvelEleve/InfosContact'|| location.pathname === '/NouvelEleve/InfosFormation' ? 'active':''}`} >
                         <span className="material-icons">person_add</span>
                         Nouvel Élève
                         </Link>

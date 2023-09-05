@@ -1,10 +1,16 @@
 import '../styles/EspaceAdmin.css'
 import UpperBar from '../components/upperBar'
+import { useState } from 'react'
 import { accounts } from '../data/comptes'
 import photo from '../assets/profile.png'
 
 function EspaceAdmin(){
     const title="Espace Admin"
+
+    const [accountsList,setAccountsList]=useState(accounts)
+    const handleDelete = (id)=>{
+        setAccountsList(accountsList.filter((acc)=>acc.id !== id))
+    }
     return(
         <div className="espace-admin">
             <UpperBar title={title}/>
@@ -29,11 +35,11 @@ function EspaceAdmin(){
                     </thead>
                     <tbody>
                     {
-                         accounts.map((acc)=>(
+                         accountsList.map((acc)=>(
                         <tr key={acc.id}>
                             <td>
-                                <span className={`${"material-icons"} ${"delete"}`}>delete_outline</span>
-                                <span className={`${"material-icons"} ${"edit"}`}>edit</span>
+                                <span className={`${"material-icons"} ${"delete"}`} onClick={()=>handleDelete(acc.id)}>delete_outline</span>
+                                <span className={`${"material-icons"} ${"edit"}`} >edit</span>
                                 <span class={`${"material-icons"} ${"mail"}`}>mail_outline</span>
                             </td>
                             <td> <img src={acc.profile ? acc.profile: photo} alt="" className="apercu-photo"/></td>
@@ -42,10 +48,7 @@ function EspaceAdmin(){
                             <td>{acc.status}</td>
                             <td>{acc.date}</td>
                             <td>{acc.email}</td>
-                            
-                            
-                           
-                            
+                
                         </tr>))
                     }
                     </tbody>

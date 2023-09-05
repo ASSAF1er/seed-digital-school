@@ -33,10 +33,10 @@ function InfosContact(){
                    
                     </form>
                     <section className="buttons">
-                        <button className="btn-back"><Link to='/InfosPerso'>
+                        <button className="btn-back"><Link to='/NouvelEleve/InfosPerso'>
                             <span className="material-icons">arrow_back</span>Précédent
                            </Link> </button>
-                        <button className="btn-next"><Link to='/InfosFormation'>
+                        <button className="btn-next"><Link to='/NouvelEleve/InfosFormation'>
                             Suivant <span className="material-icons">navigate_next</span></Link>
                         </button>
                     </section>
