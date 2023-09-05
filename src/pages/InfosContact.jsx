@@ -7,7 +7,6 @@ import { Link } from "react-router-dom"
 function InfosContact(){
    const title='Nouvel Élève'
 
-   
     return(
         <div className="ajout-eleve">
             <UpperBar title={title}/>
