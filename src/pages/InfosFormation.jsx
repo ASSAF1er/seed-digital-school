@@ -20,13 +20,17 @@ function InfosFormation(){
    const [amount, setAmount]=useState('')
    const [advance, setAdvance]=useState('')
    const [rest,setRest]=useState(0)
+   const [showFinish, setShowFinish]=useState(false)
 
    const handleClick=()=>{
     handleClick1()
     handleClick2()
-    alert("Nouvel Élève ajouté avec succès!")
+
+    setShowFinish(true)
+    setInterval(()=>{setShowFinish(false)},5000)
+    
    }
-   
+
    const handleClick1=()=>{
      setNewStudent({
         ...newStudent,
@@ -113,6 +117,10 @@ function InfosFormation(){
                      
 
                 
+            </div>
+
+            <div className={`${"ajout-avec-succes"} ${showFinish?"ajout-show":""}`}>
+                <p>Nouvel élève ajouté avec succès</p>
             </div>
         </div>
     )
