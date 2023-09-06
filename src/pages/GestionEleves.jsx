@@ -72,7 +72,7 @@ function GestionEleves(){
                 </table>
             </div>
 
-            <Link to='/InfosPerso'className="add-student-btn">
+            <Link to='/NouvelEleve/InfosPerso'className="add-student-btn">
                 <div >
                     <span class="material-icons">add_circle</span>
                 </div>

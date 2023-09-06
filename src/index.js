@@ -13,6 +13,7 @@ import Formations from './pages/Formations';
 import Comptabilite from './pages/Comptabilite';
 import EspaceAdmin from './pages/EspaceAdmin';
 import MonProfil from './pages/MonProfil';
+import NewStudentProvider from './utils/NewStudentContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,15 +22,18 @@ root.render(
     
     <Router>
     <StudentListProvider>
+    <NewStudentProvider>
     <SideBar/>
       <Routes>
         <Route path='/' element={<DashBoard/>}/>
+
         
         <Route path='/NouvelEleve' >
           <Route path='/NouvelEleve/InfosPerso' element={<InfosPerso/>}/>
           <Route path='/NouvelEleve/InfosFormation' element={<InfosFormation/>}/>
           <Route path='/NouvelEleve/InfosContact' element={<InfosContact/>}/>
         </Route>
+        
 
         <Route path='/gestionEleves' element={<GestionEleves/>}/>
         <Route path='/formations' element={<Formations/>}/>
@@ -39,6 +43,7 @@ root.render(
 
       </Routes>
     <App />
+    </NewStudentProvider>
     </StudentListProvider>
     </Router>
   </React.StrictMode>

@@ -6,7 +6,7 @@ function ListElement(props){
                 <span className={`${"material-icons"} ${"delete"}`} onClick={()=>props.handleDelete(props.id)}>delete_outline</span>
                 <span className={`${"material-icons"} ${"edit"}`}>edit</span>
             </td>
-            <td>{`${props.name.toUpperCase()}`}</td>
+            <td>{props.name.toUpperCase()}</td>
             <td>{props.surname.toUpperCase()}</td>
             <td>{props.sexe}</td>
             <td>{props.start}</td>

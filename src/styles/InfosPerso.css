@@ -19,7 +19,7 @@
 
 
 
-.form-container input{
+.form-container input,select{
     margin: 5px 0px 25px 0;
     padding: 7px 10px;
     font-size: 16px;
@@ -30,8 +30,13 @@
     background-color: rgb(217, 231, 244) ;
 }
 
-.form-container input:focus{
+.form-container input:focus,select:focus{
     outline: 2px solid #7f91c5;
+}
+.form-container select[selected]{
+    
+    background-color: blue;
+    
 }
 
 .form-container label{
