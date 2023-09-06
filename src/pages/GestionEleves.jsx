@@ -15,6 +15,7 @@ function GestionEleves(){
 
     const handleDelete=(id)=>{
         setStudents(students.filter((stud)=>stud.id!==id))
+        alert("Élève supprimé!")
 
     }
 

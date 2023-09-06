@@ -22,7 +22,13 @@ function InfosFormation(){
    const [rest,setRest]=useState(0)
 
    const handleClick=()=>{
-    setNewStudent({
+    handleClick1()
+    handleClick2()
+    alert("Nouvel Élève ajouté avec succès!")
+   }
+   
+   const handleClick1=()=>{
+     setNewStudent({
         ...newStudent,
         level:level,
         training:training,
@@ -32,10 +38,8 @@ function InfosFormation(){
         advance:advance,
         rest:rest,
     })
-    handleClick1()
-    
    }
-   const handleClick1=()=>{setStudents([newStudent,...students])}
+   const handleClick2=()=>{setStudents([newStudent,...students])}
 
   
     return(

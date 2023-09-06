@@ -76,7 +76,7 @@ function MonProfil(){
                     <section className="buttons">
                         
                         <button className="btn-next" onClick={saveprofile}><Link >
-                            Valider
+                            Enregistrer 
                         </Link></button>
                     </section>
                     
