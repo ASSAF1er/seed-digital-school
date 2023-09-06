@@ -12,6 +12,8 @@ function InfosPerso(){
    const {students}=useContext(StudentList)
    const {newStudent,setNewStudent}=useContext(NewStudent)
 
+   
+
    const [name,setName]=useState('')
    const [surname,setSurname]=useState('')
    const [sexe,setSexe]=useState('')
@@ -26,7 +28,7 @@ function InfosPerso(){
    const handleClick=()=>{
     setNewStudent(
         {...newStudent,
-            id:students.length===0?1:students.length+1,
+            id:students.length===0?1:students.length+5000,
             name:name,
             surname:surname,
             sexe:sexe,

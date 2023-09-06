@@ -19,7 +19,7 @@ function InfosFormation(){
    const [end,setEnd]=useState('')
    const [amount, setAmount]=useState('')
    const [advance, setAdvance]=useState('')
-   const [rest,setRest]=useState(amount-advance)
+   const [rest,setRest]=useState(0)
 
    const handleClick=()=>{
     setNewStudent({
@@ -92,7 +92,7 @@ function InfosFormation(){
                         <input type="text" name="nom-enfant" value={advance} onChange={(e)=>setAdvance(e.target.value)} /></label>
 
                         <label for="nom-enfant"> <span> Reste <span className="star">*</span></span>
-                        <input type="text" name="nom-enfant" value={rest} onChange={(e)=>setRest(e.target.value)} /></label>
+                        <input type="text" name="nom-enfant" value={rest} onChange={(e)=>setRest(rest)} /></label>
 
                         </div>
                
