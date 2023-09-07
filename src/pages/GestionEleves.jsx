@@ -1,6 +1,6 @@
 import UpperBar from "../components/upperBar"
 import '../styles/GestionEleves.css'
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import {StudentList} from '../utils/StudentListContext'
 import ListElement from "../components/ListElement"
 import photo from '../assets/profile.png'
@@ -11,11 +11,14 @@ function GestionEleves(){
     const title='Gestion Élèves'
 
     const {students,setStudents}=useContext(StudentList)
-    
 
+    const[deleted, setDeleted]=useState(false)
+    
+ 
     const handleDelete=(id)=>{
         setStudents(students.filter((stud)=>stud.id!==id))
-        alert("Élève supprimé!")
+        setDeleted(true)
+        setTimeout(()=>setDeleted(false),3000)
 
     }
 
@@ -78,9 +81,13 @@ function GestionEleves(){
                     <span class="material-icons">add_circle</span>
                 </div>
             </Link>
+            
+            <div className={`${"supprime-avec-succes"} ${deleted?"deleted-show":""}`}>
+                <p>Élève supprimé avec succès</p>
+            </div>
 
         </div>
 
     )
-}
+} 
 export default GestionEleves

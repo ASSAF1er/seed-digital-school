@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    height: 100vh;
 }
 .form-container {
     display: flex;
@@ -13,8 +14,10 @@
     flex-wrap: wrap;
     justify-content: center;
    
-    max-width: 60%;
-    margin: 10px auto;
+    width: 60%;
+    margin: 0px auto;
+    
+    
     
     
 }
@@ -138,6 +141,7 @@ margin: 5px 5px;
     height: 100px;
     margin: 0 10px;
     border-radius: 50px;
+    border: none;
 }
 .star{
     color: #1c8ddf;
@@ -160,7 +164,14 @@ margin: 5px 5px;
     
 }
 .ajout-show{
+    right: 0px;   
+}
+.inputError{
+    border:2px solid red
+}
+.error-popup{
+    background-color: rgba(250, 23, 23, 0.906);
+}
+.error-show{
     right: 0px;
-    
-    
 }

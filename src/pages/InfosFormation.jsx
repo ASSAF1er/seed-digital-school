@@ -22,12 +22,32 @@ function InfosFormation(){
    const [rest,setRest]=useState(0)
    const [showFinish, setShowFinish]=useState(false)
 
-   const handleClick=()=>{
-    handleClick1()
-    handleClick2()
+   const [clicked, setClicked]=useState(false)
+    const [errorPopup,setErrorPopup]=useState(false)
 
-    setShowFinish(true)
-    setInterval(()=>{setShowFinish(false)},5000)
+    const isError = (value)=>{
+        if( value === null || value.trim().length=== 0 ){
+            return true
+        }else{
+            return false  
+        }
+    }
+
+   const handleClick=()=>{
+    setClicked(true)
+
+    if(!isError(level) && !isError(training) && !isError(start) && !isError(end) && !isError(amount) && !isError(advance)){
+        
+        
+        handleClick2()
+        handleClick1() 
+      
+        setShowFinish(true)
+    setInterval(()=>{setShowFinish(false)},5000)  
+    }else{
+        setErrorPopup(true)
+        setTimeout(()=>setErrorPopup(false),3000)
+    }
     
    }
 
@@ -43,9 +63,8 @@ function InfosFormation(){
         rest:rest,
     })
    }
-   const handleClick2=()=>{setStudents([newStudent,...students])}
+   const handleClick2 =()=>{setStudents([newStudent,...students])}
 
-  
     return(
         <div className="ajout-eleve">
             <UpperBar title={title}/>
@@ -56,13 +75,13 @@ function InfosFormation(){
 
                         
                             <label for="level"> <span> Niveau scolaire<span className="star">*</span></span>
-                            <select name="level" id="level" onChange={(e)=>setLevel(e.target.value)}>
+                            <select name="level" id="level"  onChange={(e)=>setLevel(e.target.value)} style={{border: isError(level)&&clicked? "2px solid red":"none"}}>
                             <option value="" selected disabled></option>
                                 <option value="Master">CEP</option>
                                 <option value="BEPC">BEPC</option>
                                 <option value="Probatoire">Probatoire</option>
                                 <option value="Bac">Bac</option>
-                                <option value="Licence 1">Licence1</option>
+                                <option value="Licence 1">Licence 1</option>
                                 <option value="Licence 2">Licence 2</option>
                                 <option value="Licence 3">Licence 3</option>
                                 <option value="Master">Master</option>
@@ -71,7 +90,7 @@ function InfosFormation(){
                             </label><br/>
 
                             <label for="training"><span> Formation souhaitée  <span className="star">*</span></span><br/>
-                                <select name="taining" id="training" onChange={(e)=>setTraining(e.target.value)}>
+                                <select name="taining" id="training" onChange={(e)=>setTraining(e.target.value)} style={{border: isError(training)&&clicked? "2px solid red":"none"}}>
                                     <option value=""></option>
                                     <option value="Développement web">Développement web</option>
                                     <option value="Design Graphique">Design Graphique</option>
@@ -84,20 +103,20 @@ function InfosFormation(){
                             <div className="first-line">
 
                         <label for="nom-enfant"> <span> Date début <span className="star">*</span></span> 
-                        <input type="date" name="nom-enfant" value={start} onChange={(e)=>setStart(e.target.value)} /></label>
+                        <input type="date" name="nom-enfant" value={start} onChange={(e)=>setStart(e.target.value)} style={{border: isError(start)&&clicked? "2px solid red":"none"}}/></label>
 
                         <label for="nom-enfant"> <span> Date fin <span className="star">*</span></span>
-                        <input type="date" name="nom-enfant" value={end} onChange={(e)=>setEnd(e.target.value)} /></label>
+                        <input type="date" name="nom-enfant" value={end} onChange={(e)=>setEnd(e.target.value)} style={{border: isError(end)&&clicked? "2px solid red":"none"}}/></label>
 
                         </div>
 
                         <label for="nom-enfant"> <span> Montant à payer <span className="star">*</span></span></label><br/>
-                        <input type="text" name="nom-enfant" value={amount} onChange={(e)=>setAmount(e.target.value)}  /><br/>
+                        <input type="text" name="nom-enfant" value={amount} onChange={(e)=>setAmount(e.target.value)} style={{border: isError(amount)&&clicked? "2px solid red":"none"}} /><br/>
 
                         <div className="first-line">
 
                         <label for="nom-enfant"> <span> Avance <span className="star">*</span></span> 
-                        <input type="text" name="nom-enfant" value={advance} onChange={(e)=>setAdvance(e.target.value)} /></label>
+                        <input type="text" name="nom-enfant" value={advance} onChange={(e)=>setAdvance(e.target.value)} style={{border: isError(advance)&&clicked? "2px solid red":"none"}}/></label>
 
                         <label for="nom-enfant"> <span> Reste <span className="star">*</span></span>
                         <input type="text" name="nom-enfant" value={rest} onChange={(e)=>setRest(rest)} /></label>
@@ -121,6 +140,9 @@ function InfosFormation(){
 
             <div className={`${"ajout-avec-succes"} ${showFinish?"ajout-show":""}`}>
                 <p>Nouvel élève ajouté avec succès</p>
+            </div>
+            <div className={`${"ajout-avec-succes error-popup"} ${errorPopup?"error-show":""}`}>
+                <p>Ces champs sont obligatoires</p>
             </div>
         </div>
     )
