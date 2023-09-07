@@ -8,9 +8,14 @@ function EspaceAdmin(){
     const title="Espace Admin"
 
     const [accountsList,setAccountsList]=useState(accounts)
+
+    const [deleted, setDeleted]=useState(false)
     const handleDelete = (id)=>{
         setAccountsList(accountsList.filter((acc)=>acc.id !== id))
+        setDeleted(true)
+        setTimeout(()=>setDeleted(false), 3000)
     }
+
     return(
         <div className="espace-admin">
             <UpperBar title={title}/>
@@ -57,6 +62,11 @@ function EspaceAdmin(){
             <div className="add-account-btn">
             <span className="material-icons">add_circle</span>
             </div>
+
+            <div className={`${"supprime-avec-succes"} ${deleted?"deleted-show":""}`}>
+                <p>Compte supprimé avec succès</p>
+            </div>
+
         </div>
     )
 }
