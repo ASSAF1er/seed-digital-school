@@ -5,15 +5,16 @@
     top: 0px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     height: 100vh;
-    overflow: hidden;
+    
 }
-.table-container{
-margin: 0 auto;
-max-height: 500px;
-max-width: 900px;
-overflow-x: scroll;
-overflow-y: scroll;
+.gestion-eleves .table-container{
+    margin: 0 auto;
+    max-height: 500px;
+    max-width: 900px;
+    overflow: scroll;
 
 }
 thead{

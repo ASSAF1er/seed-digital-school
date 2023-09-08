@@ -29,6 +29,7 @@ function EspaceAdmin(){
                             <th>Actions</th>
                             <th>Photo</th>
                             <th>Nom</th>
+                            <th>Tel</th>
                             <th>Password</th>
                             <th>Statut</th>
                             <th>Depuis</th>
@@ -49,6 +50,7 @@ function EspaceAdmin(){
                             </td>
                             <td> <img src={acc.profile ? acc.profile: photo} alt="" className="apercu-photo"/></td>
                             <td>{acc.name}</td>
+                            <td>{acc.tel}</td>
                             <td>{acc.password}</td>
                             <td>{acc.status}</td>
                             <td>{acc.date}</td>

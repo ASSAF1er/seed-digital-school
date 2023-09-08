@@ -9,6 +9,7 @@
     height: 100vh;
     padding: 0;
     margin: 0;
+    overflow: hidden;
     
 }
 .page-connexion .titre{
@@ -76,4 +77,26 @@
     padding: 10px;
     border-radius: 5px;
     margin: 10px auto;
+}
+.page-connexion a:hover{
+    background-color: rgb(232, 153, 5);
+}
+.page-connexion .supprime-avec-succes{
+    position: absolute;
+    top: 100px;
+    right: -100%;
+    
+    background-color: rgba(255, 166, 0, 0.974);
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    transition: 1s;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px 0 #20212447;
+    
+}
+.page-connexion .error-popup{
+    background-color: rgba(250, 23, 23, 0.906);
 }
