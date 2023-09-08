@@ -1,0 +1,79 @@
+.page-connexion{
+    background-color: #008aeb;
+
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    
+}
+.page-connexion .titre{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.page-connexion .container{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+ 
+}
+.page-connexion .sous-titre{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    
+}
+.page-connexion .warning{
+    color: rgb(220, 150, 19);
+    font-style: italic;
+    font-weight: bold;
+}
+.page-connexion .warning .material-icons{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.page-connexion .inputs{
+    margin-top: 30PX;
+}
+.page-connexion .inputs input{
+    border: none;
+    width: 60%;
+    margin: 10px;
+    height: 30px;
+    border-radius: 5px;
+    color: rgb(59, 58, 58);
+    font-size: 18px;
+    padding: 0 10px;
+}
+.page-connexion .inputs input:focus{
+    outline: orange 3px solid;
+}
+.page-connexion a{
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    width: 60%;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px auto;
+}

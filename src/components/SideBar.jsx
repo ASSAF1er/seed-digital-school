@@ -18,7 +18,7 @@ const SideBar = () => {
 
             <div className="menu">
                 <ul>
-                <li><Link to='/'className={`${location.pathname === '/' ? 'active':''}`} >
+                <li><Link to='/'className={`${location.pathname === '/Dashboard' ? 'active':''}`} >
                     <span className="material-icons">dashboard</span>
                     Tableau de bord</Link>
                  </li>

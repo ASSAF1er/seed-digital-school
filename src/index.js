@@ -14,6 +14,7 @@ import Comptabilite from './pages/Comptabilite';
 import EspaceAdmin from './pages/EspaceAdmin';
 import MonProfil from './pages/MonProfil';
 import NewStudentProvider from './utils/NewStudentContext';
+import Connexion from './pages/Conexion';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,7 +26,8 @@ root.render(
     <NewStudentProvider>
     <SideBar/>
       <Routes>
-        <Route path='/' element={<DashBoard/>}/>
+        <Route path='/' element={<Connexion/>}/>
+        <Route path='/Dashboard' element={<DashBoard/>}/>
 
         
         <Route path='/NouvelEleve' >
